@@ -1,0 +1,18 @@
+[project]
+name = "se-agent-smol"
+version = "0.1.0"
+description = "se-agent smol: a tiny smolagents agent that builds a one-page web app with tools"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "smolagents>=1.20",
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
